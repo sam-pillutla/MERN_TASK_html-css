@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <title>CSS TASK2</title>
+    <head>
+        <!--for vertical bar-->
+        <style>
+
+            .navbar{
+                background-color: #35bfff;
+                overflow: hidden;
+                width:130px;
+            }
+
+            .navbar a{
+                display:flex;
+                font-size: large;
+                color: aliceblue;
+                text-align: center;
+                padding:15px 16px;
+                text-decoration: none;
+            }
+
+            .navbar a:hover{
+                background-color: rgb(255, 208, 0);
+                color:black;
+            }
+            /* for horizontal bar */
+
+            .hnav{
+                background-color: #0d3a21;
+                overflow: hidden;
+                width:406px;
+            }
+
+            .hnav a{
+                display:inline-block;
+                /* float:left; */
+                font-size: large;
+                color: aliceblue;
+                text-align: center;
+                padding:15px 16px;
+                text-decoration: none;
+            }
+
+            .hnav a:hover{
+                background-color: rgb(255, 153, 0);
+                color: black;
+            }
+            .menu{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .box1{
+                width:auto;
+                height:auto;
+                border:1px solid black;
+                position: absolute;
+                padding-top:10px;
+                padding-left:10px;
+                padding-right:10px;
+                left:340px;
+                top:130px;
+            }
+            .box2{
+                width:auto;
+                height:auto;
+                border:1px solid black;
+                position: absolute;
+                padding-top:10px;
+                padding-left:10px;
+                padding-bottom: 10px;
+                left:710px;
+                top:130px;
+            }
+
+        </style>
+
+    </head>
+    <body style="padding-top:40px;padding-left: 50px;">
+        <p id="box1"></p>
+        <h2 style="display: inline-block;padding-left: 230px;" > Vertical Navigation Bar</h2>
+        <h2 style="display: inline-block; padding-left: 260px;">Horizontal Navigation Bar</h2>
+
+        <div class="menu">
+            <div class="box1">
+                <div class="navbar">
+                    <a href="www.google.com" target="_blank">Home</a>
+                    <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java</a>
+                    <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a>
+                    <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a>
+                    <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank">Bootstrap</a>
+                </div>
+            </div>
+        
+
+            <div class="box2">
+                <div class="hnav">
+                    <a href="www.google.com" target="_blank">Home</a>
+                    <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank">Java</a>
+                    <a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a>
+                    <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a>
+                    <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank">Bootstrap</a>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TASK7</title>
+    <style>
+        table{
+            position: absolute;
+            border: 1px solid #9c1072 ;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: 80px;
+
+        }
+        td{
+            text-align: left;
+            padding-bottom: 10px;
+            color: white;
+        }
+
+        #name,#email,#password,#phno,#zip{
+            height: 20px;
+        }
+
+        #reg{
+            width:330px;
+            height:30px;
+            background-color: rgb(245, 249, 253);
+            color: black;
+            font-size:large;
+        }
+        .box1{
+            border:1px solid #9c1072;
+            width:500px;
+            height:400px;
+            background-color: #9c1072;
+            margin-left: 100px;
+            margin-top: 15px;
+        }
+
+        .box2{
+            border:1px solid #6c0a4f;
+            width:700px;
+            height:430px;
+            margin-top: 80px;
+            margin-left: 350px;
+            background-color:#6c0a4f ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box2">
+    <div class="box1">
+    <table>
+    <form>
+        <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" placeholder="enter name"></td>
+        </tr>
+
+        <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="text" id="email"  placeholder="enter email"></td>
+        </tr>
+        <tr>
+        <td><label for="password">Password:</label></td>
+        <td><input type="password" id="password"  placeholder="enter password"></td>
+        </tr>
+
+        <tr>
+        <td><label for="phno">Phone Number:</label></td>
+        <td><input type="tel" id="phno"  placeholder="enter Phone number"></td>
+        </tr>
+
+        <tr>
+        <td><label for="gen">Gender:</label></td>
+        <td>
+            <label for="male">Male:</label>
+            <input type="radio" id="male">
+            <label for="female">Female:</label>
+            <input type="radio" id="female">
+            <label for="others">Others:</label>
+            <input type="radio" id="others">
+        </td>
+        </tr>
+        <tr>
+            <td><label for="language">Language:</label></td>
+            <td>
+                <select id="language" name="language">
+                    <option value="english">English</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Tamil">Tamil</option>
+                    <!-- Add more language options as needed -->
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="zip">Zip code:</label></td>
+            <td><input type="number" id="zip"  placeholder="enter zip code"></td>
+        </tr>
+        <tr>
+            <td><label for="about">About:</label></td>
+            <td><textarea rows="3" cols="25" input type="number" id="about"  placeholder="Write about yourself"></textarea></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="submit" value="Register" id="reg"></td>
+        </tr>
+
+    </form>
+</table>
+</div>
+</div>
+
+    
+</body>
+</html>
