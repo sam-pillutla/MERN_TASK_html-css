@@ -1,0 +1,127 @@
+<!--TASK5-->
+<!DOCTYPE html>
+<html>
+    <title>HTML5</title>
+    <head>
+        <style>
+            table{
+                width:100%;  
+                max-width: 600px;
+            }
+
+            table,td,tr{
+                border:1px solid rgb(0, 0, 0);
+                border-collapse: collapse;
+                margin: auto;
+            }
+            input{
+                width: 362px;
+                
+            }
+            #k{
+                text-align: center;
+                padding-left: 30px;
+                padding-right: 30px;
+                width:200px;
+                
+            }
+
+            p{
+                margin: 2px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align: center;color: blue;">Registration form</h2>
+        <table>
+            <tr>
+                <td id="k">First Name</td>
+                <td><input type="text" id="fname" placeholder="enter your first name"></td>
+            </tr>
+            <tr>
+                <td id="k">Last Name</td>
+                <td><input type="text" id="lname" placeholder="enter your last name"></td>
+            </tr>
+            <tr>
+                <td id="k">Email</td>
+                <td><input type="email" id="email" placeholder="enter your email "></td>
+            </tr>
+            <tr>
+                <td id="k">Password</td>
+                <td><input type="password" id="pswd" placeholder="enter unique password"></td>
+            </tr>
+            <tr>
+                <td id="k">Re-enter Password</td>
+                <td><input type="password" id="pswd1"  placeholder="re-enter password"></td>
+            </tr>
+            <tr>
+                <td id="k">Gender</td>
+                <td id="gender">    
+                    <input type="checkbox" id="male" style="width:auto;">
+                    <label for="male">Male</label>
+                    <hr>
+                    <input type="checkbox" id="female" style="width:auto;">
+                    <label for="female">Female</label>  
+                </td>
+            </tr>
+            <tr>
+                <td id="k">Age</td>
+                <td><input type="number" id="age" placeholder="enter your age"></td>
+            </tr>
+            <tr>
+                <td id="k">Phone number</td>
+                <td><input type="tel" id="tel" placeholder="enter your mobile number"></td>
+            </tr>
+            <tr>
+                <td id="k">Address</td>
+                <td><textarea id="address" name="address" rows="4" cols="52
+                    " placeholder="enter your address" style="font-family: 'Times New Roman', Times, serif;"></textarea></td>
+            </tr>
+            <tr>
+                <td id="k">State</td>
+                <td><input type="text" id="state" placeholder="enter your state"></td>
+            </tr>
+            <tr>
+                <td id="k">Country</td>
+                <td><select id="country" name="country">
+                    <option value="choose your country">choose your country</option>
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="australia">Australia</option>
+                    <option value="india">India</option>
+                    <!-- Add more countries as needed -->
+                  </select>
+                  </td>
+            </tr>
+            <tr>
+                <td id="k">Languages known</td>
+                <td>
+                    <input type="checkbox" id="english" style="width:auto;">
+                    <label for="english">English</label>
+                    <input type="checkbox" id="kannada" style="width:auto;">
+                    <label for="kannada">Kannada</label>  
+                    <input type="checkbox" id="hindi" style="width:auto;">
+                    <label for="hindi">Hindi</label>
+                    <input type="checkbox" id="telugu" style="width:auto;">
+                    <label for="telugu">Telugu</label>  
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="tnc" style="width: fit-content;">
+                    <label for="tnc">Hereby I decale all the given details are true.</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p style="text-align: right;">Login to <a href="https://ethnus.com/">ethnus</a> page</p>
+                </td>
+            </tr>
+        </table>
+
+        <p style="text-align: center;margin:10px"><input style="width: fit-content;" type="submit" value="Register"></p>
+    </body>
+</html>
