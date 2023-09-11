@@ -3,41 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS TASK6</title>
+    <title>CSS TASK 6</title>
+
     <style>
-        #pic{
-            width:250px;
-            height:250px;
-            margin-left: 580px;
-            margin-top: 50px;
+        label,input{
+            display: block;
+            padding-bottom: 4px;
+            padding-top: 10px;
         }
         label{
-            margin-left: 500px;
-            font-size: larger;
-            margin-top: 20px;
             font-display: bold;
-            font-family: Arial, Helvetica, sans-serif;
-
+            font-size:large;
         }
-        #name,#pswd{
-            margin-left: 500px;
-            width:400px;
-            height:25px;
-            margin-bottom: 20px;    
-        }
-
-        #login{
-            width:410px;
-            color: rgb(255, 255, 255);
-            background-color: rgb(63, 155, 63);
-            height: 30px;
-            display:block;
-            margin-left: 500px;
-            margin-bottom: 8px;
-        }
-
-
-    .box{
+        .box{
         background-color: lightgray;
         border:1px solid lightgray;
         width:410px;
@@ -58,37 +36,64 @@
         display:inline-block;
     }
     #button:hover{
-        background-color: rgb(255, 4, 4);
-        
+        background-color: rgb(255, 4, 4);   
     }
 
     p{
         margin-left:5px;     
     }
-    #cb{
+    .cb{
         margin-left: 505px;
+        display:inline-flex;
+    }
+    .center{
+        margin-left: 500px;
+    }
+    img{
+        width:250px;
+        height:250px
+    }
+    #name,#pswd{
+        width:400px;
+    }
+    #login{
+            width:410px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(63, 155, 63);
+            height: 30px;
+            display:block;
+            margin-left: 500px;
+            margin-bottom: 8px;
+            margin-top: 17px;
+        }
+    img{
+        margin-left: 565px;
+        margin-top: 50px;
     }
 
     </style>
 </head>
-
 <body>
     <img src="profile.png" alt="profile_pic" id="pic">
     <form>
-        <label for="user">Username<br></label>
-        <input type="text" id="name" placeholder="Enter Username">
+        <div class="center">
+            <label for="name">Username</label>
+            <input type="text" id="name" placeholder="Enter Username">
 
-        <label for="pswd">Password<br></label>
-        <input type="password" id="pswd" placeholder="Enter Password">
-
+            <label for="pswd" style="padding-top:20px;">Password</label>
+            <input type="password" id="pswd" placeholder="Enter password">
+        </div>
         <input type="submit" value="Login" id="login">
         
-        <input type="checkbox" id="cb">
-        <label for="cb" style="margin-left: 1px;font-size: medium;">Remember me</label>
+        <div class="cb">
+            <input type="checkbox">
+            <label for="cb" style="margin-left: 1px;font-size: medium;">Remember me</label>
+        </div>
     </form>
     <div class="box">
         <button id="button">Cancel</button>
         <p style="margin-left: 180px;">Forgot <a href="#" style="color:black;">password?</a></p>
     </div>
+
 </body>
 </html>
