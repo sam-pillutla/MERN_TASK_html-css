@@ -6,14 +6,15 @@
     <title>CSS TASK 6</title>
 
     <style>
-        label,input{
+        #name,#pswd,input{
             display: block;
-            padding-bottom: 4px;
             padding-top: 10px;
         }
+
         label{
-            font-display: bold;
+            font-display:dark;
             font-size:large;
+
         }
         .box{
         background-color: lightgray;
@@ -43,8 +44,10 @@
         margin-left:5px;     
     }
     .cb{
-        margin-left: 505px;
+        margin-left: 501px;
         display:flex;
+        padding-bottom:1px;
+        padding-bottom: 5px;
     }
     .center{
         margin-left: 500px;
@@ -56,6 +59,7 @@
     #name,#pswd{
         width:400px;
     }
+
     #login{
             width:410px;
             color: rgb(255, 255, 255);
@@ -64,7 +68,7 @@
             display:block;
             margin-left: 500px;
             margin-bottom: 8px;
-            margin-top: 17px;
+            margin-top: 20px;
         }
     img{
         margin-left: 565px;
@@ -79,14 +83,15 @@
         <div class="center">
             <label for="name">Username</label>
             <input type="text" id="name" placeholder="Enter Username">
+            <p></p>
 
-            <label for="pswd" style="padding-top:20px;">Password</label>
+            <label for="pswd">Password</label>
             <input type="password" id="pswd" placeholder="Enter password">
         </div>
         <input type="submit" value="Login" id="login">
         
         <div class="cb">
-            <input type="checkbox">
+            <input type="checkbox" id="cb">
             <label for="cb" style="margin-left: 1px;font-size: medium;">Remember me</label>
         </div>
     </form>
